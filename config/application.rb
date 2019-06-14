@@ -12,7 +12,8 @@ module IndieStudioSessionLog
     config.load_defaults 5.2
     config.action_dispatch.default_headers = {
       'Access-Control-Allow-Origin' => 'https://registerindie.tk',
-      'Access-Control-Request-Method' => %w{GET POST OPTIONS DELETE}.join(",")
+      'Access-Control-Request-Method' => %w{GET POST OPTIONS DELETE}.join(","),
+      'Access-Control-Allow-Credentials' => true
     }
 
     # Settings in config/environments/* take precedence over those specified here.
