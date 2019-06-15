@@ -15,7 +15,7 @@ module IndieStudioSessionLog
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins 'https://registerindie.tk'
-        resource '*', headers: :any, methods: %i[get post delete],
+        resource '*', headers: :any, methods: %i[get post delete options],
                       credentials: true
       end
     end
