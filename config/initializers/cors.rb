@@ -2,9 +2,9 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'http://localhost:3000'
-    resource '*', headers: :any, methods: %i[get post put delete options head],
-                  credentials: true
+    origins '*'
+    resource '*', headers: :any, methods: %i[get post put delete head],
+                  credentials: false
   end
   allow do
     origins 'https://blooming-shore-70311.herokuapp.com'
