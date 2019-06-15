@@ -6,9 +6,9 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 #     resource '*', headers: :any, methods: %i[get post put delete head],
 #                   credentials: false
 #   end
-  allow do
-    origins 'https://blooming-shore-70311.herokuapp.com'
-    resource '*', headers: :any, methods: %i[get post put delete options head],
-                  credentials: true
-  end
+#   allow do
+#     origins 'https://blooming-shore-70311.herokuapp.com'
+#     resource '*', headers: :any, methods: %i[get post put delete options head],
+#                   credentials: true
+#   end
 end
